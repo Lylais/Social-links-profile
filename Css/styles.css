@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+} 
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/static/Inter-Bold.ttf') format('truetype');}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/static/Inter-Regular.ttf') format('truetype');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/static/Inter-SemiBold.ttf') format('truetype');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+    font-weight: 100 200 300 400 500 600 700 800;
+}
+
+:root{
+    --green : hsl(75, 94%, 57%);
+    --white : hsl(0, 0%, 100%);
+    --grey-700 : hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+}
+
+body{
+    display: flex;
+    height : 100vh;
+    font-size : 14px;
+    font-family : 'Inter';
+    background-color: var(--grey-900);
+    color : var(--white);
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    width : 428px;
+    background-color: var(--grey-800);
+    
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+}
+
+img{
+    width : 100%;
+    border-radius: 50%
+}
+
+.img{
+    width : 100px;
+    margin-top : 45px;
+}
+
+.identity{
+    font-size : 13px;
+    margin-top : 28px;
+    letter-spacing: 0.5px;
+}
+
+.localisation{
+    font-size : 15.5px;
+    margin-top : 10px;
+    color : var(--green);
+    font-weight: 800;
+}
+
+.description{
+    font-size : 15.5px;
+    font-weight : 400;
+
+    margin-top : 32px;
+
+}
+
+.button1, .button2, .button3, .button4, .button5{
+    background-color: var(--grey-700);
+    border : none;
+    width : 338px;
+    height: 51px;
+    border-radius : 10px;
+    color : var(--white);
+    font-size : 16px;
+    font-weight : 800
+}
+
+.button1{
+    margin-top : 27px;
+}
+
+.button2, .button3, .button4, .button5{
+    margin-top : 17px;
+}
+
+.button5{
+    margin-bottom: 43px;
+}
+
+button:hover{
+    background-color: var(--green);
+    color : var(--grey-800)
+}
